@@ -1,22 +1,22 @@
-int Button1 = 2;
-int Button2 = 3;
-int Button3 = 4;
-int Button4 = 5;
-int Button5 = 6;
-int PowerLED = 7;
-int ShockLED = 8;
-int CorrectLED = 9;
-int TinglerKit = 10;
-int Button1Status;
-int Button2Status;
-int Button3Status;
-int Button4Status;
-int Button5Status;
-int RandomNumber;
+int Button1 = 2;  //Initializes the first button on digital pin 2
+int Button2 = 3;  //Initializes the second button on digital pin 3
+int Button3 = 4;  //Initializes the third button on digital pin 4
+int Button4 = 5;  //Initializes the fourth button on digital pin 5
+int Button5 = 6;  //Initializes the fifth button on digital pin 6
+int PowerLED = 7;  //Initializes the green power LED on digital pin 7
+int ShockLED = 8;  //Initializes the red shock LED on digital pin 8
+int CorrectLED = 9;  //Initializes the blue correct LED on pin 9
+int TinglerKit = 10;  //Initializes the tingler kit relay on pin 10
+int Button1Status;  //Initializes the variable that stores the value of the first button
+int Button2Status;  //Initializes the variable that stores the value of the second button
+int Button3Status;  //Initializes the variable that stores the value of the third button
+int Button4Status;  //Initializes the variable that stores the value of the fourth button
+int Button5Status;  //Initializes the variable that stores the value of the fifth button
+int RandomNumber;  //Initializes the random number variable for the random number generator
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(Button1, INPUT);
+  pinMode(Button1, INPUT);  //
   pinMode(Button2, INPUT);
   pinMode(Button3, INPUT);
   pinMode(Button4, INPUT);
