@@ -65,32 +65,30 @@ void loop() {
       digitalWrite(TinglerKit, LOW);  //Turns the tingler kit relay off
     }
   }
-  else if (Button2Status == 1) {
-    if (RandomNumber == 2) {
-      digitalWrite(CorrectLED, HIGH);
-      delay(1000);
-      digitalWrite(CorrectLED, LOW);
-      delay(1000);
-      digitalWrite(CorrectLED, HIGH);
-      delay(500);
-      digitalWrite(CorrectLED, LOW);
-      delay(500);
-      digitalWrite(CorrectLED, HIGH);
-      delay(500);
-      digitalWrite(CorrectLED, LOW);
-      delay(500);
-      digitalWrite(CorrectLED, HIGH);
-      delay(500);
-      digitalWrite(CorrectLED, HIGH);
-      delay(5000);
-      digitalWrite(CorrectLED, LOW);
+  else if (Button2Status == 1) {  //If the sencond button is presses
+    if (RandomNumber == 2) {  //If the random number is a 2
+      digitalWrite(CorrectLED, HIGH);  //Turns the blue correct LED on
+      delay(1000);  //Waits 1 second
+      digitalWrite(CorrectLED, LOW);  //Turns the blue correct LED off
+      delay(1000);  //Waits 1 second
+      digitalWrite(CorrectLED, HIGH);  //Turns the blue correct LED on
+      delay(500);  //Waits 0.5 seconds
+      digitalWrite(CorrectLED, LOW);  //Turns the blue correct LED off
+      delay(500);  //Waits 0.5 seconds
+      digitalWrite(CorrectLED, HIGH);  //Turns the blue correct LED on
+      delay(500);  //Waits 0.5 seconds
+      digitalWrite(CorrectLED, LOW);  //Turns the blue correct LED off
+      delay(500);  //Waits 0.5 seconds
+      digitalWrite(CorrectLED, HIGH);  //Turns the blue correct LED on
+      delay(5000);  //Waits 5.5 seconds
+      digitalWrite(CorrectLED, LOW);  //Turns the blue correct LED off
     }
     else {
-      digitalWrite(ShockLED, HIGH);
-      digitalWrite(TinglerKit, HIGH);
-      delay(5000);
-      digitalWrite(ShockLED, LOW);
-      digitalWrite(TinglerKit, LOW);
+      digitalWrite(ShockLED, HIGH);  //Turns the red shcok LED on
+      digitalWrite(TinglerKit, HIGH);  //Turns the tingler kit relay on
+      delay(5000);  //Waits 5 seconds
+      digitalWrite(ShockLED, LOW);  //Turns the red shock LED off
+      digitalWrite(TinglerKit, LOW);  //Turns the tingler kit relay off
     }
   }
   if (Button3Status == 1) {
@@ -110,7 +108,7 @@ void loop() {
       digitalWrite(CorrectLED, HIGH);
       delay(500);
       digitalWrite(CorrectLED, HIGH);
-      delay(5000);
+      delay(5500);
       digitalWrite(CorrectLED, LOW);
     }
     else {
@@ -136,9 +134,7 @@ void loop() {
       digitalWrite(CorrectLED, LOW);
       delay(500);
       digitalWrite(CorrectLED, HIGH);
-      delay(500);
-      digitalWrite(CorrectLED, HIGH);
-      delay(5000);
+      delay(5500);
       digitalWrite(CorrectLED, LOW);
     }
     else {
@@ -164,9 +160,7 @@ void loop() {
       digitalWrite(CorrectLED, LOW);
       delay(500);
       digitalWrite(CorrectLED, HIGH);
-      delay(500);
-      digitalWrite(CorrectLED, HIGH);
-      delay(5000);
+      delay(5500);
       digitalWrite(CorrectLED, LOW);
     }
     else {
